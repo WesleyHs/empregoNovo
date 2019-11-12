@@ -1,0 +1,159 @@
+<% include ../parcial/header.ejs %>
+
+<br>
+<br>
+<h5 id="titulo">Cadastro de Empresas</h5>
+
+    <form>
+    <br>
+    <div id="cadastro2">
+            <!--primeira linha-->
+            <div class="row">
+            <div class="col-md-6 col-md-offset-0">
+                    <label for="nomejuridico">Nome Juridico</label>
+                    <input type="text" class="form-control" name="nomeJuridico" >
+            </div>
+            <div class="col-md-5 col-md-offset-0">
+                    <label for="nomeFantasia">Nome Fantasia</label>
+                    <input type="text" class="form-control" name="nomeFantasia" >
+            </div>
+            </div>
+            <br>
+            <!--Segunda linha-->
+            <div class="row">
+            <div class="col-md-3 col-md-offset-0">
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" class="form-control" name="cnpj" maxlength="11">
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                    <label for="numInscriMuni"> Inscr.Munic</label>
+                    <input type="text" class="form-control" name="numInscriMuni">
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                    <label for="numInscrEst"> Inscr.Est</label>
+                    <input type="text" class="form-control" name="numInscriEst">
+            </div>
+            </div>
+            <br>
+            <!--Terceira linha-->
+            <div class="row">
+            <div class="col-md-5 col-md-offset-0">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" class="form-control" name="endereco">
+            </div>
+            <div class="col-md-2 col-md-offset-0">
+                    <label for="numEnd">N°</label>
+                    <input type="text" class="form-control" name="numEnd">
+            </div>
+            <div class="col-md-4 col-md-offset-0">
+                    <label for="bairro">bairro</label>
+                    <input type="text" class="form-control" name="bairro">
+            </div>
+            </div>
+            <br>
+            <!--Quarta Linha-->
+            <div class="row">
+                    <div class="col-md-4 col-md-offset-0">
+                    <label for="complemento">complemento</label>
+                    <input type="text" class="form-control" name="complemento">
+            </div>
+            <div class="col-md-3 col-md-offset-0">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" name="cidade" >
+            </div>
+            <div class="col-md-2 col-md-offset-0">
+                    <label for="estado">Estado</label>
+                    <br>
+                    <select class="form-control" id="estados">
+                                    <option>AC</option>
+                                    <option>AL</option>
+                                    <option>AP</option>
+                                    <option>AM</option>
+                                    <option>BA</option>
+                                    <option>CE</option>
+                                    <option>DF</option>
+                                    <option>ES</option>
+                                    <option>GO</option>
+                                    <option>MA</option>
+                                    <option>MT</option>
+                                    <option>MS</option>
+                                    <option>MG</option>
+                                    <option>PA</option>
+                                    <option>PB</option>
+                                    <option>PR</option>
+                                    <option>PE</option>
+                                    <option>PI</option>
+                                    <option>RJ</option>
+                                    <option>RN</option>
+                                    <option>RS</option>
+                                    <option>RO</option>
+                                    <option>RR</option>
+                                    <option>SC</option>
+                                    <option>SP</option>
+                                    <option>SE</option>
+                                    <option>TO</option>
+                    </select>
+            </div> 
+            <div class="col-md-2 col-md-offset-0" >
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" name="cep" maxlength="8">
+            </div>       
+            </div>
+            <br>
+            <!--Quinta linha-->
+            <div class="row">
+            <div class="col-md-3 col-md-offset-0">
+                    <label for="contato1">Telefone 1</label>
+                    <input type="contato1" class="form-control" name="contato1"  maxlength="11">
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                    <label for="contato2">Telefone 2</label>
+                    <input type="contato2" class="form-control" name="contato2" maxlength="11">
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                    <label for="contato3">Celular</label>
+                    <input type="contato3" class="form-control" name="contato3" maxlength="11">
+            </div>                
+            </div>
+            <br>
+            <!--Sexta linha-->
+            <div class="row">
+            <div class="col-md-5">
+                    <label for="email1">E-mail 1</label>
+                    <input type="text" class="form-control" name="email" placeholder="example@example.com">
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+                    <label for="email2">E-mail 2</label>
+                    <input type="text" class="form-control" name="email2" placeholder="example@example.com">
+            </div>
+            </div>
+            <br>
+            <!--setima linha-->
+            <div class="row">
+                            <div class="col-md-4">
+                              <label for="foto">Logo marca da empresa</label>
+                              <input type="file" id="exampleInputFile">
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+            <!--oitava linha botões-->
+            <div class="col-md-5 col-md-offset-3" id="botao">
+                    <button type="submit" class="btn btn-primary">Gravar Registro</button>
+                    <button type="submit" class="btn btn-danger">Cancelar</button>
+            </div>
+            </div>
+        </div>
+<br>
+
+<% include ../parcial/footer.ejs %>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body>
+
+
+</html>
